@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ta Te Ti</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <h1>Ta Te Ti</h1>
+    <div id="winDiv" class="dissapear"></div>
+
+    <div id="container">
+        <div>
+            <h2 id="h2X">Jugador X:</h2>
+            <p id="gamesX">0</p>
+        </div>
+        <div id="board">
+            <div id="00" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="00img" alt="" src="">
+            </div>
+            <div id="01" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="01img" alt="" src="">
+            </div>
+            <div id="02" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="02img" alt="" src="">
+            </div>
+            <div id="10" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="10img" alt="" src="">
+            </div>
+            <div id="11" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="11img" alt="" src="">
+            </div>
+            <div id="12" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="12img" alt="" src="">
+            </div>
+            <div id="20" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="20img" alt="" src="">
+            </div>
+            <div id="21" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="21img" alt="" src="">
+            </div>
+            <div id="22" onclick="move(id)" onmouseover="hover(id)" class="turn1"><img id="22img" alt="" src="">
+            </div>
+        </div>
+        <div>
+            <h2 id="h2O">Jugador O:</h2>
+            <p id="gamesO">0</p>
+        </div>
+    </div>
+
+    <div id="restartDivs">
+        <div id="restart" class="restartButtons" onclick="restart()">REINICIAR PARTIDA</div>
+        <div id="totalRestart" class="restartButtons" onclick="totalRestart ()">REINICIAR JUEGO</div>
+    </div>
+
+    <script type="text/javascript" src="assets/app.js"></script>
+
+</body>
+</html>

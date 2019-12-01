@@ -1,0 +1,191 @@
+h1{
+    text-align: center;
+    font-family: 'rajdhani';
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+body{
+    background-image: url("../images/antartica.jpeg");
+    background-repeat: repeat;
+}
+#cont{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+}
+
+#cont p{
+    font-size: 24px;
+    /* margin: 0; */
+    display: inline-block;
+    padding: 0em 0.5em 0em 1em;
+}
+
+#cont p:first-child{
+    padding: 0em 0.5em 0em 0em;
+}
+
+#table{
+    position: relative;
+    margin: 0 auto;
+    background-color: #ffffffc4;
+    padding: 2em;
+    border-radius: 2em;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.cardCont{
+    /*padding: 50px;*/
+    background-color: indigo;
+    display: inline-block;
+}
+
+.cardCont:hover{
+    opacity: 0.6;
+}
+
+select{
+    padding: 0.1em 1em 0.1em 1em;
+    border: none;
+    background-color: #8749b3;
+    width: 7em;
+    font-family: 'Cairo', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+option{
+    background-color: #dbaaff;
+}
+
+
+#card{
+    text-align: center;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 100px;
+    perspective: 1000px;
+    display: inline-block;
+}
+
+.flip-card-inner {
+    /* position: relative; */
+    /* width: 100%; */
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1em; 
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color:white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-back {
+    background-color: indigo;
+    color: white;
+    transform: rotateY(0deg);
+  }
+
+.flip-card-back:hover{ 
+    opacity: 0.8;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+  }
+
+.rotateWin{
+    transition: 3s;
+    transform: rotateY(-180deg);
+}
+
+.rotateBack{
+    transform: rotateY(0deg);
+}
+
+img{
+    border-radius: 1.1em;
+}
+
+.disable{
+    pointer-events:none;
+}
+
+.playerPoints{
+    display: inline-block;
+}
+
+#announce{
+    position: absolute;
+    width: 100%;
+    background: #ffffffc4;
+    z-index: 3;
+    color: indigo;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#announce p{
+    display: block;
+}
+
+#announce button{
+    padding: 0.2em 1em 0.2em 1em;
+    border: none;
+    background-color: #4b0082d6;
+    font-family: 'Cairo', sans-serif;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 2em;
+}
+
+#announce button:hover{
+    background-color: #dbaaff;
+}
+
+.active{
+    color: indigo;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 2px #fff, 0 0 8px #fff, 0 0 5px #008ae6, 0 0 5px #008ae6, 0 0 5px #008ae6, 0 0 5px #008ae6, 0 0 5px #008ae6;
+    }
+    
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 11px #4dbeff, 0 0 28px #4dbeff, 0 0 11px #4dbeff, 0 0 21px #4dbeff, 0 0 18px #4dbeff, 0 0 11px #4dbeff;
+    }
+  }
